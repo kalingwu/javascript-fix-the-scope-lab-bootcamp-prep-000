@@ -13,7 +13,7 @@ function yourAnimal() {
 }
 
 function add2(n) {
-  var n = 265
+  var const n = Math.floor(Math.random() * 1000)
   const two = 2
   return n + two
 
@@ -32,22 +32,7 @@ var funkyFunction = function() {
 var theFunk = funkyFunction
 
 /*
-describe('Fix the Scope', function() {
-  describe('myAnimal()', function() {
-    it('returns my animal', () => {
-      expect(window.myAnimal()).toEqual('dog')
-    })
-  })
 
-  describe('yourAnimal()', function() {
-    it('returns your animal', function(){
-      expect(window.yourAnimal()).toEqual('cat')
-    })
-
-    it('does not hard-code the answer', function() {
-      expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
-    })
-  })
 
   describe('add2(n)', function() {
     it('adds two to n', function() {
